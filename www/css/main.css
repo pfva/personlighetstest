@@ -4,6 +4,7 @@
 	background-image: url(/imgs/jumbotron-background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center top;
 	height: 100vh;
 	filter: blur();
 	color: white;
