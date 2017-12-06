@@ -20,6 +20,18 @@
 	font-family: 'Nunito', cursive;
 }
 
+.jumbotron a.btn {
+	color: white;
+	background-color: #ba4844;
+	box-shadow: 0 0 5px black;
+}
+
+.jumbotron a.btn:hover {
+	color: white;
+	background-color: #cc3c37;
+	box-shadow: 0 0 5px black;
+}
+
 .bg-color {
 	background: linear-gradient(to bottom right, #B0D47E, #24D434);
 	height: 100vh;
