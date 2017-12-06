@@ -12,6 +12,14 @@
 	margin: 0;
 }
 
+.jumbotron h1 {
+	font-family: 'Lemon', cursive;
+}
+
+.jumbotron p {
+	font-family: 'Nunito', cursive;
+}
+
 .bg-color {
 	background: linear-gradient(to bottom right, white, #96EBA1);
 	height: 100vh;
