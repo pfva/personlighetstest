@@ -1,0 +1,10 @@
+/* 	Photo by Matheus Ferrero on Unsplash 
+	https://unsplash.com/photos/TkrRvwxjb_8 */
+.jumbotron {
+	background-image: url(/imgs/jumbotron-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur();
+	color: white;
+	text-shadow: 0 0 0.3em black;
+}
