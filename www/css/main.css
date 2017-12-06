@@ -10,3 +10,8 @@
 	text-shadow: 0 0 0.3em black;
 	margin: 0;
 }
+
+.bg-color {
+	background: linear-gradient(to bottom right, white, #96EBA1);
+	height: 100vh;
+}
