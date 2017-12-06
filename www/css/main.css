@@ -24,3 +24,11 @@
 	background: linear-gradient(to bottom right, white, #96EBA1);
 	height: 100vh;
 }
+
+.card {
+	font-family: 'Nunito', cursive;	
+}
+
+.card h4 {
+	font-family: 'Bitter', serif;
+}
