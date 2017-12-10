@@ -17,15 +17,34 @@
     <main class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
-          <div class="card my-3" id="instructions-card">
+          <div class="card my-3">
             <h4 class="card-header">Personlighetstest</h4>
             <div class="card-content">
-              <div class="card-body">
+              <div class="card-body" id="test-instructions">
                 <h4 class="card-title">Instruktioner</h4>
                 <p class="card-text">Syftet med detta personlighetstest är att ge dig en bild av din personlighet, beskriven enligt Carl Jungs typlära. Det finns naturligtvis ingen ”rätt personlighet”, varje människa är unik och passar in i olika sammanhang på olika bra sätt. Genom att vara medveten om sin personlighetsprofil kan man däremot arbeta mer medvetet med sin egen utveckling.</p>
                 <p class="card-text">Under övningen beskrivs 24 påståenden eller situationer ställda som motsatsförhållanden eller motpoler. Du ska ställning till vilken ”pol” eller påstående som stämmer bäst med hur du är och känner, och i hur stor utsträckning det är så, genom att placera reglaget någonstans på skalan.</p>
                 <p class="card-text">Känns det som står beskrivet längst ut på skalan verkligen ”som du”, så placerar du alltså reglaget nära det påståendet, närmare ju mer träffsäkert påståendet känns. Känns det som att bägge påståendena kan vara lika beskrivande av hur du är (t.ex. beroende på sammanhangen), placerar du reglaget någonstans mer mitt på skalan. Observera att det inte finns någon exakt ”mitt” på skalan – du måste alltså ta ställning till åt vilken ”pol” det ändå ”lutar”.</p>
                 <a href="#" class="btn btn-primary d-block mx-auto" id="instructions-button">Jag förstår - Starta testet!</a>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card-body" id="test-questions">
+                      <p class="card-text mb-3 question-start">Test question</p>
+                      <div class="row">
+                        <div class="col-6 border">
+                          <p class="card-text option-one float-left">First choice</p>
+                        </div>
+                        <div class="col-6 border">
+                          <p class="card-text option-two float-right">Second choice</p>
+                        </div>
+                      </div>
+                      <input type="range" name="score" min="0" max="11" class="slider">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
