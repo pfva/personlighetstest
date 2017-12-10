@@ -38,7 +38,8 @@
 }
 
 .card {
-	font-family: 'Nunito', cursive;	
+	font-family: 'Nunito', cursive;
+	min-height: 90vh;
 }
 
 .card h4 {
