@@ -24,6 +24,7 @@
 	color: white;
 	background-color: #ba4844;
 	box-shadow: 0 0 5px black;
+	min-width: 20%;
 }
 
 .jumbotron a.btn:hover {
