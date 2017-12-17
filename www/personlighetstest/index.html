@@ -20,6 +20,7 @@
           <div class="card my-3">
             <h4 class="card-header">Personlighetstest</h4>
             <div class="card-content">
+              <!-- Test-instruktioner - försvinner när man klickar på "Jag förstår"-knappen -->
               <div class="card-body" id="test-instructions">
                 <h4 class="card-title">Instruktioner</h4>
                 <p class="card-text">Syftet med detta personlighetstest är att ge dig en bild av din personlighet, beskriven enligt Carl Jungs typlära. Det finns naturligtvis ingen ”rätt personlighet”, varje människa är unik och passar in i olika sammanhang på olika bra sätt. Genom att vara medveten om sin personlighetsprofil kan man däremot arbeta mer medvetet med sin egen utveckling.</p>
@@ -41,14 +42,18 @@
                           <p class="card-text option-two float-right">Second choice</p>
                         </div>
                       </div>
+                      <!-- Range slider -->
                       <input type="range" name="score" min="0" max="11" class="slider">
+
                       <div class="row mt-4">
+                        <!-- Frågecounter och progress bar -->
                         <div class="col-6">
                           <p>Besvarat: <span class="current-question">0</span> av 24 frågor</p>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="24"></div>
                           </div>
                         </div>
+                        <!-- Tillbaka och nästa-button -->
                         <div class="col-6 d-flex align-items-md-end">
                           <div class="container">
                             <div class="row">
@@ -62,7 +67,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Pagination here -->
+                      <!-- Pagination -->
                       <nav aria-label="Page navigation example">
                         <ul class="pagination mt-4">
                           <li class="page-item">
