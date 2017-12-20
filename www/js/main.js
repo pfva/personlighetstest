@@ -4,7 +4,7 @@ $(document).on("click", "#instructions-button", function(){
 	});
 });
 
-function renderQuestions(test){
+/* function renderQuestions(test){
 	let that = this;
 	$.getJSON('/json/test.json', function(data){
 		that.questions = data.questions;
@@ -14,4 +14,4 @@ function renderQuestions(test){
 }
 
 renderQuestions();
-// $.getJSON('/json/test.json', renderQuestions);
+// $.getJSON('/json/test.json', renderQuestions); */
