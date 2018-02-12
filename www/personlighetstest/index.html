@@ -1,117 +1,24 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>Personlighetstest</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/libs/bootstrap-4-beta.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lemon|Nunito|Bitter" rel="stylesheet">
     <!-- Application specific CSS -->
     <link rel="stylesheet" href="/css/main.css">
-
   </head>
-  <body class="bg-color">
+  <body class="bg-blurred">
     <main class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
           <div class="card my-3">
             <h4 class="card-header">Personlighetstest</h4>
             <div class="card-content">
-              <!-- Test-instruktioner - försvinner när man klickar på "Jag förstår"-knappen -->
-              <div class="card-body" id="test-instructions">
-                <h4 class="card-title">Instruktioner</h4>
-                <p class="card-text">Syftet med detta personlighetstest är att ge dig en bild av din personlighet, beskriven enligt Carl Jungs typlära. Det finns naturligtvis ingen ”rätt personlighet”, varje människa är unik och passar in i olika sammanhang på olika bra sätt. Genom att vara medveten om sin personlighetsprofil kan man däremot arbeta mer medvetet med sin egen utveckling.</p>
-                <p class="card-text">Under övningen beskrivs 24 påståenden eller situationer ställda som motsatsförhållanden eller motpoler. Du ska ställning till vilken ”pol” eller påstående som stämmer bäst med hur du är och känner, och i hur stor utsträckning det är så, genom att placera reglaget någonstans på skalan.</p>
-                <p class="card-text">Känns det som står beskrivet längst ut på skalan verkligen ”som du”, så placerar du alltså reglaget nära det påståendet, närmare ju mer träffsäkert påståendet känns. Känns det som att bägge påståendena kan vara lika beskrivande av hur du är (t.ex. beroende på sammanhangen), placerar du reglaget någonstans mer mitt på skalan. Observera att det inte finns någon exakt ”mitt” på skalan – du måste alltså ta ställning till åt vilken ”pol” det ändå ”lutar”.</p>
-                <a href="#" class="btn btn-primary d-block mx-auto" id="instructions-button">Jag förstår - Starta testet!</a>
-              </div>
-
-              <div class="container">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="card-body p-1" id="test-questions">
-                      <p class="card-text mb-3 question-start">Test question</p>
-                      <div class="row">
-                        <div class="col-6 border">
-                          <p class="card-text option-one float-left">First choice</p>
-                        </div>
-                        <div class="col-6 border">
-                          <p class="card-text option-two float-right">Second choice</p>
-                        </div>
-                      </div>
-                      <!-- Range slider -->
-                      <input type="range" name="score" min="0" max="11" class="slider">
-
-                      <div class="row mt-4">
-                        <!-- Frågecounter och progress bar -->
-                        <div class="col-6">
-                          <p>Besvarat: <span class="current-question">0</span> av 24 frågor</p>
-                          <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="24"></div>
-                          </div>
-                        </div>
-                        <!-- Tillbaka och nästa-button -->
-                        <div class="col-6 d-flex align-items-md-end">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-md-6 order-2 order-md-1">
-                                <button type="button" class="btn btn-outline-secondary w-100 mt-2 mt-md-0">Tillbaka</button>
-                              </div>
-                              <div class="col-md-6 order-1 order-md-2">
-                                <button type="button" class="btn btn-primary w-100">Nästa fråga</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Pagination -->
-                      <!-- <nav aria-label="Page navigation example">
-                        <ul class="pagination mt-4">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#">6</a></li>
-                          <li class="page-item"><a class="page-link" href="#">7</a></li>
-                          <li class="page-item"><a class="page-link" href="#">8</a></li>
-                          <li class="page-item"><a class="page-link" href="#">9</a></li>
-                          <li class="page-item"><a class="page-link" href="#">10</a></li>
-                          <li class="page-item"><a class="page-link" href="#">11</a></li>
-                          <li class="page-item"><a class="page-link" href="#">12</a></li>
-                          <li class="page-item"><a class="page-link" href="#">13</a></li>
-                          <li class="page-item"><a class="page-link" href="#">14</a></li>
-                          <li class="page-item"><a class="page-link" href="#">15</a></li>
-                          <li class="page-item"><a class="page-link" href="#">16</a></li>
-                          <li class="page-item"><a class="page-link" href="#">17</a></li>
-                          <li class="page-item"><a class="page-link" href="#">18</a></li>
-                          <li class="page-item"><a class="page-link" href="#">19</a></li>
-                          <li class="page-item"><a class="page-link" href="#">20</a></li>
-                          <li class="page-item"><a class="page-link" href="#">21</a></li>
-                          <li class="page-item"><a class="page-link" href="#">22</a></li>
-                          <li class="page-item"><a class="page-link" href="#">23</a></li>
-                          <li class="page-item"><a class="page-link" href="#">24</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -124,6 +31,9 @@
     <script src="/js/libs/popper-1.11.0.js"></script>
     <script src="/js/libs/bootstrap-4-beta.js"></script>
     <!-- Application specific JavaScript -->
+    <script src="/js/classes/Base.class.js"></script>
+    <script src="/js/classes/App.class.js"></script>
+    <script src="/js/classes/User.class.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
